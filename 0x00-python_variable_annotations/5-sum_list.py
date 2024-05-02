@@ -2,6 +2,7 @@
 """ returns the floor of the float. """
 from typing import List
 
+
 def sum_list(input_list: List[float]) -> float:
     """ returns the floor of the float. """
     sum_total = 0
