@@ -2,6 +2,7 @@
 """ docc string for scribt. """
 from typing import Tuple, List
 
+
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """ docc string for scribt. """
     zoomed_in: List = [
