@@ -13,7 +13,7 @@ task_wait_random = __import__('3-tasks').task_wait_random
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """ rondom wait"""
     delay_list = []
-    for _ in range(n + 1):
+    for _ in range(n):
         result = await task_wait_random(max_delay)
         delay_list.append(result)
     return sorted(delay_list)
