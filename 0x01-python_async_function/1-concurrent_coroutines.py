@@ -13,7 +13,7 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """ rondom wait"""
     delay_list = []
-    for _ in range(n + 1):
+    for _ in range(n):
         result = await asyncio.create_task(wait_random(max_delay))
         delay_list.append(result)
     return sorted(delay_list)
